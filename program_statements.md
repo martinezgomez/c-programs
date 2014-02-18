@@ -19,7 +19,8 @@ en la invocación de la linea de comandos.
 
 Calculate the mean of 10 numbers given by the user.
 
-Calcular la media de 10 números proporcionados por el usuario.
+Calculat lt
++ media de 10 números proporcionados por el usuario.
 
 
 03 Mean
@@ -56,15 +57,16 @@ Complete the following program in order to print the list of words.
 ```c
   int main() {
   
+
+  
+```
      const char *list[] = {
        "bread", 
        "toast",
        "bacon"
      };
      
-  
   }
-```
 
 Find the way (using sizeof operator) to print the number of words defined in the list.
 
