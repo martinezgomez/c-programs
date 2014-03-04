@@ -72,6 +72,9 @@ margin:0 0 20px 0;
 .imagep{
 margin:10ex 0ex 0ex 0ex;
 }
+.imagep2{
+padding:105ex 0ex 0ex 0ex;
+}
 #separador2{
 margin:15px 0 18px 0px;
 }
@@ -145,7 +148,7 @@ margin:15px 0 0 2px;
 margin:2.5ex 0 0 0.8ex;
 color:#cfcfcf;
 font-size:10px;
-padding:0 24ex 0 0;
+padding:0 30ex 0 0;
 }
 .linksocial {
 margin: 16px 0 0 3px;
@@ -188,7 +191,7 @@ display:inline;
 }
 .TextFoot {
 text-align:left;
-margin:9ex 0 0 0;
+margin:11ex 0 0 0;
 font-size:10px;
 color:#999999;
 }
