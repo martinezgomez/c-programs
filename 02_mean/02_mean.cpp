@@ -3,19 +3,20 @@
 
 #define max_numeros 10
 
-int main(){
+int main(int argc, char *argv[]){
 
-double numero, 
-media = 0;
-for(int numeros=0;numeros<max_numeros;numeros++){
+  double numero, 
+	 media = 0;
 
-printf("dime un numero: ");
-scanf(" %lf", &numero);
-media += numero;
-}
+  for(int numeros=0;numeros<max_numeros;numeros++){
 
-media /= max_numeros;
-printf("media: %lf\n", media);
+    printf("dime el numero %i: ", numeros+1);
+    scanf(" %lf", &numero);
+    media += numero;
+  }
 
-    return EXIT_SUCCESS;
+  media /= max_numeros;
+  printf("media: %lf\n", media);
+
+  return EXIT_SUCCESS;
 }

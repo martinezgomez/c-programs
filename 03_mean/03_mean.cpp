@@ -1,29 +1,22 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define max 100
-int main(){
+int main(int argc, char *argv[]){
+int introducido, cantidad_numeros=0;
+double total;
 
-double numero=0, media;
-int numeradores=0;
-
-printf("introduce un numero\n");
-scanf(" %lf", &numero);
-//si el numero es superior o = a 0 sumar a la media
-if(numero>=0){
-numeradores++;
-for(int n=0; n<max; n++){
-media +=numero;
-}
-}
-
-else
-{
-media/=numeradores;
-printf("media:  %lf\n", media);
-}
-
+  //preguntar un numero
+do{ 
+  printf("\n\tDime un numero:");
+  scanf(" %i", &introducido);
+if(introducido >= 0){
+  total += introducido;
+  cantidad_numeros++;}
+}while(introducido >=1);
+total /= cantidad_numeros;
+printf("\n\t la media de tus %i numeros introducidos es: %.2lf",cantidad_numeros, total);
+printf("\n\n\n");
+//mientras el numero sea mayor que 0 sumarlo a la variable
+//si es menor calcular la media
 return EXIT_SUCCESS;
 }
-//sumar la media
-//numero inferios a 0 dividir media entre cantidad de numeros
