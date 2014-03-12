@@ -10,13 +10,12 @@ scanf(" %i", &lado);
 
 	for (int fila=0; fila<lado; fila++){
 		for (int col=0;	col<lado; col++)
-		it
-+ (fila >= col)
-		    printf(" * ");
-		else
+		  if(fila >= col)
+		      printf(" * ");
+		  else
 		    printf("   ");
 		printf("\n");
 	}
 
-return EXIT_SUCCESS;
+	return EXIT_SUCCESS;
 } 
