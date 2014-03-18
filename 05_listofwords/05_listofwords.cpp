@@ -2,6 +2,9 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]){
+
+  int cuenta = 0;  
+
   const char *list [] = {
     "bread",
     "toast",
@@ -11,11 +14,15 @@ int main(int argc, char *argv[]){
     "chococrispies",
     NULL
   };
-int i=0;  
-for(int i=0; list[i]; i++)
-    printf("%s\n", list[i]);
-i++;  
-printf("\n%i", i);
+
+  for(int i=0; list[i]; i++){
+
+    cuenta++;  
+    printf("palabra nº%i: %s\n",cuenta, list[i]);
+  }
+
+
+  printf("\nLa lista contiene %i palabras.\n", cuenta);
 
   return EXIT_SUCCESS;
 }
