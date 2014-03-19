@@ -1,21 +1,36 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-double add(double op1, double op2){
+void fallo(char *argv[]){
 
-	double suma;
+    fprintf(stderr, "Usage: %s number number \n", argv[0]);
+    exit(EXIT_FAILURE);
+}
 
-	suma = op1 + op2;	
-	return suma;
+double add(double numero1, double numero2){
+
+    double resultado=0;
+
+    resultado = numero1 + numero2;
+    return resultado;
 }
 
 int main(int argc, char *argv[]){
 
-	double param1 = atoi(argv[1]), param2 = atoi(argv[2]), 
-	       suma=0;
-	
-	suma = add(param1, param2);
-printf("%.2lf\n", add(param1, param2) );
+    // Si no se introducen 2 numeros, llamada a la funcion para que indique el error y su forma de uso.
+    if(argc<3)
+	fallo(argv);
+
+    // Atof para convertir los datos en tipo float.
+    double numero1 = atof(argv[1]), 
+	   numero2 = atof(argv[2]), 
+	   resultado = 0;
+
+    // La variable resultado tiene el valor que le devuelva la funcion add.
+    resultado = add(numero1, numero2);
+
+    printf(" %.2lf + %.2lf = %.2lf \n", numero1, numero2, resultado); 
 
     return EXIT_SUCCESS;
 }
+
