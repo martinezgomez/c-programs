@@ -3,13 +3,8 @@
 
 int main(int argc, char *argv[]){
 
+const char +list[] = {"yield", "yelp"};
 
 
-
-
-
-
-
-
-    return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }

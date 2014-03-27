@@ -3,8 +3,7 @@
 
 int main(int argc, char *argv[]){
 
-
-#Define N 0x10 
+#define N 0x10 
 
 int  power ( int  base ,  int  exponent )  { 
 
