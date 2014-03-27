@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]){
 
-  const char *list[] = {"yield", "yelp"};
+  const char *list[] = {"yield", "yelp", "yellow"};
 
   if (strcmp(list[0], list[1]) > 0){
     const char *comodin = list[1];
