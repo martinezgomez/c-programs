@@ -5,7 +5,7 @@
 
 // <condition> ? <expr1_true> : <expr2_false>;
 
-int add(int n){ return n>0 ? n + add(n-1) : 0; }
+int add(int n){ return n>0 ? n * add(n-1) : 0; }
 
 int main(int argc, char *argv[]){
 
