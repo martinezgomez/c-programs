@@ -1,3 +1,5 @@
+//g++ snake.cpp -o snake -lncurses
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -26,7 +28,7 @@ void rellena_con_mierda_la_piii_serpiente(struct TAnillo coordenada[N]){
 void muestra(struct TAnillo coordenada[N]){
     clear();
     for (int i=0; i<N; i++)
-        mvprintw( coordenada[i].y, coordenada[i].x, "*");
+        mvprintw( coordenada[i].y, coordenada[i].x, "O");
     refresh();
 }
 
@@ -55,23 +57,32 @@ int main(int argc, char *argv[]){
     curs_set(0);           // No se ve el cursor.
     while(1){
         user_input = getch();
-        switch(tolower(user_input)){
-            case 'q':
+       
+ switch(tolower(user_input)){
+
+            case 'w':
+
             case KEY_UP:
                 movimiento.x = 0;
                 movimiento.y = -1;
                 break;
-            case 'a':
+
+            case 's':
+
             case KEY_DOWN:
                 movimiento.x = 0;
                 movimiento.y = 1;
                 break;
-            case 'o':
+
+            case 'a':
+
             case KEY_LEFT:
                 movimiento.x = -1;
                 movimiento.y = 0;
                 break;
-            case 'p':
+
+            case 'd':
+
             case KEY_RIGHT:
                 movimiento.x = 1;
                 movimiento.y = 0;
