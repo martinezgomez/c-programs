@@ -21,8 +21,8 @@ int main(int argc, char* argv[]){
   /* Pedir los datos */
 
   for (int i=0; i<N; i++){
-    printf("Nombre completo: ");
-    gets( clase[i].nombre_completo );
+    printf("Nombre completo:\t ");
+    scanf("%s", clase[i].nombre_completo );
     printf("Nota de Programación: ");
     scanf(" %lf", &clase[i].asignaturas.programacion );
     printf("Nota de Bases de Datos: ");

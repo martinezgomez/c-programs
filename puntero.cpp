@@ -3,21 +3,21 @@
 
 int main(int argc, char *argv[]){
 
-const char *nombre = "pepe"
+const char *nombre = "pepe";
 const char *puntero;
-puntero = nombre
+puntero = nombre;
 //con * apunta a una parte especifica de la memoria y sin asterisco apunta a la variable
-char letra = *puntero
+char letra = *puntero;
 puntero++;
 
 //asi se lleva un puntero hasta el final
-while(*puntero!=\o);
+while(*puntero !='\0');
 puntero++;
 
 //asi se lleva un puntero hasta el principio
-while(*puntero!=nombre)
+while(*puntero != *nombre)
 puntero--;
-
+printf("%c", *puntero);
 
 
 

@@ -22,6 +22,12 @@ int main(int argc, char *argv[]){
             A[fila][col] = inicial++;
 
     A[6][8] = 0;
+    for(int i=0; i<N; i++){
+   A[0][i] = 0;
+   A[15][i] = 0;
+    A[i][0] = 0;
+    A[i][15] = 0;
+    }
     show_me(A);
     printf("\n");
 

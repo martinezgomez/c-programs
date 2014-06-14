@@ -4,9 +4,9 @@
 #define N 7
 
 void natural(int n){
-    if (n < 0)
+    if (n > 0)
         return;
-    natural(n-1);
+    natural(n+1);
     printf("%3i ", n);
 }
 
